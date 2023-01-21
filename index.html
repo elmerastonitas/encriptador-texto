@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    
+    
+</head>
+
+<body>
+    <h1>Encriptador/Desencriptador</h1>
+    <label for="text">Texto:</label>
+    <textarea id="text"></textarea>
+    <br>
+    <label for="encrypt">Encriptar</label>
+    <input type="radio" id="encrypt" name="mode" value="encrypt" checked>
+    <label for="decrypt">Desencriptar</label>
+    <input type="radio" id="decrypt" name="mode" value="decrypt">
+    <br>
+    <button onclick="convert()">Convertir</button>
+    <br>
+    <label for="result">Resultado:</label>
+    <textarea id="result"></textarea>
+    <br>
+    <button onclick="copy()">Copiar</button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
