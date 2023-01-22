@@ -32,10 +32,14 @@ body {
 .resultado {
     background-color: white;
     width: 30%;
-    height: 450px;
+    height: 500px;
     text-align: center;
     border-radius: 5%;
 
+}
+
+.alert-icon {
+    color: #0A3871;
 }
 
 .inserttext {
@@ -62,12 +66,14 @@ body {
     border: 1px solid transparent;
     outline: none;
     font-size: 25px;
+
 }
 
 #text::placeholder {
     color: #0A3871;
     font-size: 25px;
 }
+
 
 #paste-button {
     text-align: center;
@@ -77,7 +83,7 @@ body {
     background-color: transparent;
     border: none;
     color: #556f90;
-    
+
 }
 
 #reset-button {
@@ -88,7 +94,7 @@ body {
     background-color: transparent;
     border: none;
     color: #556f90;
-    
+
 }
 
 #encrypt-btn {
@@ -126,4 +132,20 @@ body {
     color: #0A3871;
     border-radius: 24px;
     border: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #D8DFE8;
+    color: #556f90;
+
+
+}
+
+.link {
+    color: #0A3871;
+    text-decoration:none;
 }

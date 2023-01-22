@@ -103,7 +103,8 @@ function paste(textId, buttonId) {
     });
 }
 
-function pasteText(){
+
+function pasteText() {
     paste('text', 'paste-button');
 }
 
@@ -113,3 +114,36 @@ function reset() {
     document.getElementById("text").value = "";
     document.getElementById("result").value = "";
 }
+
+// Obtiene el elemento del textarea mediante su ID
+var textarea = document.getElementById("text");
+// Obtiene el elemento del div1 mediante su ID
+var div1 = document.getElementById("div1");
+// Obtiene el elemento del div2 mediante su ID
+var div2 = document.getElementById("div2");
+// Agrega un evento "input" al textarea para detectar cambios en su contenido
+textarea.addEventListener("input", function () {
+    // Comprueba si la longitud del valor del textarea es igual a 0
+    if (textarea.value.length === 0) {
+        // Si es así, muestra div1 y oculta div2
+        div1.style.display = "block";
+        div2.style.display = "none";
+    } else {
+        // Si no, oculta div1 y muestra div2
+        div1.style.display = "none";
+        div2.style.display = "block";
+    }
+});
+// Agrega un evento "onload" a la ventana para detectar cuando la página se carga completamente
+window.onload = function () {
+    // Comprueba si la longitud del valor del textarea es igual a 0
+    if (textarea.value.length === 0) {
+        // Si es así, muestra div1 y oculta div2
+        div1.style.display = "block";
+        div2.style.display = "none";
+    } else {
+        // Si no, oculta div1 y muestra div2
+        div1.style.display = "none";
+        div2.style.display = "block";
+    }
+};

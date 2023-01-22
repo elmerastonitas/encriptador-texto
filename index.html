@@ -43,12 +43,13 @@
                 <div>
                     <textarea class="inserttext" placeholder="Ingresa el texto aquí" id="text" autofocus></textarea>
                 </div>
-
+                <p class="alert-icon"><i class="fa-solid fa-circle-exclamation"></i> Sólo letras minúsculas y sin
+                    acentos</p>
                 <div class="botones">
-                    <button id="paste-button" onclick="pasteText()">
-                        <i class="fas fa-clipboard text-danger">.</i>
+                    <button title="Pegar texto" id="paste-button" onclick="pasteText()">
+                        <i class="fas fa-clipboard">.</i>
                     </button>
-                    <button id="reset-button" onclick="reset()">
+                    <button title="Limpiar" id="reset-button" onclick="reset()">
                         <i class="fa-regular fa-trash-can">.</i>
                     </button>
 
@@ -59,16 +60,24 @@
             </div>
 
             <div class="resultado">
-                <div>
-                    <div>
-                        <textarea class="textresult" placeholder="Ningún mensaje fue encontrado" id="result"></textarea>
-                    </div>
 
+                <div id="div2" style="display: none;">
+                    <div>
+                        <textarea class="textresult" placeholder="Esperando..." id="result"></textarea>
+                    </div>
                     <div>
                         <button id="copy-btn" onclick="copy()">Copiar</button>
-
                     </div>
                 </div>
+
+                <div id="div1" style="display: none;">
+                    <img id="imgbuscando" src="images/mensaje-vacio.png" alt="Esperando mensaje">
+                    <p id="msgnohaytexto">
+                        <strong>Ningún mensaje fue encontrado<br><br>
+                        </strong> Ingresa el texto que desees encriptar o desencriptar
+                    </p>
+                </div>
+
 
 
             </div>
@@ -80,14 +89,15 @@
     </main>
 
     <footer>
-        <p class="copyright">Copyright &copy; <a href="https://www.linkedin.com/in/elmerastonitas">Elmer Astonitas</a> -
-            2022</p>
+        <p class="copyright">Copyright &copy; 2023 <a class="link"
+                href="https://www.linkedin.com/in/elmerastonitas">Elmer Astonitas</a> | Todos los derechos reservados.
+        </p>
     </footer>
 
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
-    <script src="fontawesome/js/all.js"></script>
+    <script src="fonts/fontawesome/js/all.js"></script>
 
 </body>
 
