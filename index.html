@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -44,13 +43,17 @@
                 <div>
                     <textarea class="inserttext" placeholder="Ingresa el texto aquí" id="text" autofocus></textarea>
                 </div>
-                <div>
-                    <label for="encrypt">Encriptar</label>
-                    <input type="radio" id="encrypt" name="mode" value="encrypt" checked>
-                    <label for="decrypt">Desencriptar</label>
-                    <input type="radio" id="decrypt" name="mode" value="decrypt">
-                    <button class="btnconvert" onclick="convert()">Convertir</button>
-                    <button class="btnconvert" onclick="reset()">Limpiar</button>
+
+                <div class="botones">
+                    <button id="paste-button" onclick="pasteText()">
+                        <i class="fas fa-clipboard text-danger">.</i>
+                    </button>
+                    <button id="reset-button" onclick="reset()">
+                        <i class="fa-regular fa-trash-can">.</i>
+                    </button>
+
+                    <button id="encrypt-btn" onclick="encrypt()">Encriptar</button>
+                    <button id="decrypt-btn" onclick="decrypt()">Desencriptar</button>
 
                 </div>
             </div>
@@ -62,7 +65,8 @@
                     </div>
 
                     <div>
-                        <button class="btncopy" onclick="copy()">Copiar</button>
+                        <button id="copy-btn" onclick="copy()">Copiar</button>
+
                     </div>
                 </div>
 
@@ -83,6 +87,7 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
+    <script src="fontawesome/js/all.js"></script>
 
 </body>
 
