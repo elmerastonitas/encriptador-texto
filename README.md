@@ -26,3 +26,24 @@ Codigo fuente de un encriptador y desencriptador de texto usando HTML, CSS y Jav
 ***Funciones extras:***
 - Boton de pegar con la misma funcionalidad del ctrl+V.
 - Boton para limpiar todos los campos con contenido.
+
+***Interfaces Desktop:***
+
+<a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptar.png' target='_blank'>
+  <img width='45%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptar.png' alt='Diseño Desktop - Encriptar' /></a>
+  
+ <a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptar.png' target='_blank'>
+  <img width='45%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptar.png' alt='Diseño Desktop - Desencriptar' /></a><br><br>
+  
+***Interfaces Mobile:***
+
+  <a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptarmobile.png' target='_blank'>
+  <img width='20%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptarmobile.png' alt='Aplicación Móvil - Encriptar' />
+</a>
+<a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptarmobile.png' target='_blank'>
+  <img width='20%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptarmobile.png' alt='Aplicación Móvil - Desencriptar' />
+</a>
+
+
+
+
