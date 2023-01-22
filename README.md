@@ -1,9 +1,8 @@
-# encriptador-texto
-**Encriptador de texto - Alura Challenge ONE**
+# **Encriptador de texto - Alura Challenge ONE**
 
-Codigo fuente de un encriptador y desencriptador de texto usando HTML, CSS y JavaScript.
+El reto es desarrollar una aplicación que permita la encriptación y desencriptación de textos, así poder intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
-***Las llaves de encriptación que utiliza son las siguientes:***
+**Las llaves de encriptación:**
 
 - La letra "e" es convertida a "enter".
 - La letra "i" es convertida a "imes".
@@ -12,7 +11,7 @@ Codigo fuente de un encriptador y desencriptador de texto usando HTML, CSS y Jav
 - La letra "u" es convertida a "ufat".
 
 
-***Requisitos:***
+**Requisitos:**
 
 - Debe funcionar solo con letras minúsculas.
 - No deben ser utilizados letras con acentos ni caracteres especiales.
@@ -23,11 +22,11 @@ Codigo fuente de un encriptador y desencriptador de texto usando HTML, CSS y Jav
 - Diseño responsivo.
 
 
-***Funciones extras:***
+**Funciones extras:**
 - Boton de pegar con la misma funcionalidad del ctrl+V.
 - Boton para limpiar todos los campos con contenido.
 
-***Interfaces Desktop:***
+**Interfaces Desktop:**
 
 <a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptar.png' target='_blank'>
   <img width='45%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptar.png' alt='Diseño Desktop - Encriptar' /></a>
@@ -35,14 +34,18 @@ Codigo fuente de un encriptador y desencriptador de texto usando HTML, CSS y Jav
  <a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptar.png' target='_blank'>
   <img width='45%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptar.png' alt='Diseño Desktop - Desencriptar' /></a><br><br>
   
-***Interfaces Mobile:***
+**Interfaces Mobile:**
 
   <a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptarmobile.png' target='_blank'>
   <img width='20%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/encriptarmobile.png' alt='Aplicación Móvil - Encriptar' />
 </a>
 <a href='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptarmobile.png' target='_blank'>
   <img width='20%' src='https://github.com/elmerastonitas/encriptador-texto/blob/main/images/desencriptarmobile.png' alt='Aplicación Móvil - Desencriptar' />
-</a>
+</a><br><br>
+
+**Enlace de demostracion:**
+
+https://elmerastonitas.github.io/encriptador-texto
 
 
 
