@@ -2,33 +2,88 @@
 <html lang="es">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador/Desencriptador</title>
+    <title>Encriptador de texto</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
-    <h1>Encriptador/Desencriptador</h1>
-    <label for="text">Texto:</label>
-    <textarea id="text"></textarea>
-    <br>
-    <label for="encrypt">Encriptar</label>
-    <input type="radio" id="encrypt" name="mode" value="encrypt" checked>
-    <label for="decrypt">Desencriptar</label>
-    <input type="radio" id="decrypt" name="mode" value="decrypt">
-    <br>
-    <button onclick="convert()">Convertir</button>
-    <br>
-    <label for="result">Resultado:</label>
-    <textarea id="result"></textarea>
-    <br>
-    <button onclick="copy()">Copiar</button>
+    <header>
+
+        <div class="logos">
+            <div class="logoalura">
+                <img src="images/logo.png" alt="Logo Encriptador de texto">
+
+            </div>
+            <div class="logoone">
+                <img src="images/one.png" alt="Logo Encriptador de texto">
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <div class="contenedor">
+
+            <div class="inputtexto">
+
+                <div>
+                    <textarea class="inserttext" placeholder="Ingresa el texto aquí" id="text" autofocus></textarea>
+                </div>
+                <div>
+                    <label for="encrypt">Encriptar</label>
+                    <input type="radio" id="encrypt" name="mode" value="encrypt" checked>
+                    <label for="decrypt">Desencriptar</label>
+                    <input type="radio" id="decrypt" name="mode" value="decrypt">
+                    <button class="btnconvert" onclick="convert()">Convertir</button>
+                    <button class="btnconvert" onclick="reset()">Limpiar</button>
+
+                </div>
+            </div>
+
+            <div class="resultado">
+                <div>
+                    <div>
+                        <textarea class="textresult" placeholder="Ningún mensaje fue encontrado" id="result"></textarea>
+                    </div>
+
+                    <div>
+                        <button class="btncopy" onclick="copy()">Copiar</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p class="copyright">Copyright &copy; <a href="https://www.linkedin.com/in/elmerastonitas">Elmer Astonitas</a> -
+            2022</p>
+    </footer>
+
+
+    <!-- Scripts -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
-

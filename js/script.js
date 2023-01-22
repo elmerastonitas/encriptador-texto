@@ -34,8 +34,7 @@ function convert() {
     // si el modo es desencriptar, se recorre cada caracter del texto
     else {
         for (var i = 0; i < text.length; i++) {
-            // se comprueba si cada grupo de caracteres corresponde a una letra encriptada
-            // y se reemplaza con su correspondiente valor desencriptado
+            // se comprueba si cada grupo de caracteres corresponde a una letra encriptada y se reemplaza con su correspondiente valor desencriptado
             if (text.substring(i, i + 5) == "enter") {
                 result += 'e';
                 i += 4;
@@ -67,4 +66,10 @@ function copy() {
     // se obtiene el valor del campo de resultado y se copia al portapapeles
     var result = document.getElementById("result").value;
     navigator.clipboard.writeText(result);
+}
+
+function reset() {
+    // se limpian los campos de texto
+    document.getElementById("text").value = "";
+    document.getElementById("result").value = "";
 }
