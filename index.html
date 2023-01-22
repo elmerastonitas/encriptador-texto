@@ -38,13 +38,13 @@
 
         <div class="contenedor">
 
-            <div class="inputtexto">
+            <div class="inputtexto" id="inputtexto">
 
                 <div>
                     <textarea class="inserttext" placeholder="Ingresa el texto aquí" id="text" autofocus></textarea>
                 </div>
-                <p class="alert-icon"><i class="fa-solid fa-circle-exclamation"></i> Sólo letras minúsculas y sin
-                    acentos</p>
+                <p class="alert-icon"><i class="fa-solid fa-circle-exclamation"></i> Sólo letras minúsculas sin
+                    acentos ni caracteres especiales</p>
                 <div class="botones">
                     <button title="Pegar texto" id="paste-button" onclick="pasteText()">
                         <i class="fas fa-clipboard">.</i>
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="resultado">
+            <div class="resultado" id="resultado">
 
                 <div id="div2" style="display: none;">
                     <div>
@@ -77,8 +77,6 @@
                         </strong> Ingresa el texto que desees encriptar o desencriptar
                     </p>
                 </div>
-
-
 
             </div>
 

@@ -1,10 +1,15 @@
 function encrypt() {
 
-    // obtiene el valor del texto en el campo de texto y lo pone en minúsculas
-    var text = document.getElementById("text").value.toLowerCase();
-    // obtiene el valor del modo de conversión seleccionado (encriptar o desencriptar)
-    //var mode = document.querySelector('input[name="mode"]:checked').value;
+    // obtiene el valor del texto en el campo de texto
+    var text = document.getElementById("text").value;
+
     var result = "";
+
+    // Verifica si el texto contiene caracteres diacríticos o está en mayúsculas
+    if (/[^\u0000-\u007f]/.test(text) || text != text.toLowerCase()) {
+        alert("Solo se permiten letras minúsculas sin acentos ni caracteres especiales");
+        return;
+    }
 
     // si el modo es encriptar, se recorre cada caracter del texto
 
@@ -134,6 +139,7 @@ textarea.addEventListener("input", function () {
         div2.style.display = "block";
     }
 });
+
 // Agrega un evento "onload" a la ventana para detectar cuando la página se carga completamente
 window.onload = function () {
     // Comprueba si la longitud del valor del textarea es igual a 0
